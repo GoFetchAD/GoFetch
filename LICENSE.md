@@ -15,8 +15,6 @@ THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ----------------------------------------------------------------------------------------------------------------------
 
 PowerSploit
-Function: Invoke-Mimikatz
-Author: Joe Bialek, Twitter: @JosephBialek
 Copyright (c) 2012, Matthew Graeber
 All rights reserved.
 
