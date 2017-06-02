@@ -8,7 +8,7 @@ Once the attack plan is ready, it advances towards the destination according to 
 GoFetch has two different versions:
 
 Chain reaction:
-The second version, Invoke-GoFetch (written in PowerShell to avoid Python installation prereq), I've implemented a recursion that reads the full path, steals the relevant credentials, and then copy and execute itself on the next relevant machine guided by the network path.
+The second version, Invoke-GoFetch (written in PowerShell to avoid Python installation prereq), implements a recursion that reads the full path, dumps the relevant credentials (Invoke-Mimikatz), and then copy and execute itself on the next relevant machine guided by the network path (Invoke-PsExec).
 
 One computer to rule them all:
 Python based code (a video of this version demonstrated in BlackHat Europe), using a technique where one centralized computer is doing the job of connecting to each computer in the path, in the right order, to steal (using Mimikatz) credentials from the computer memory, and use them to connect to the next machine in the path. 
