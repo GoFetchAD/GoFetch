@@ -8,10 +8,51 @@ Once the attack plan is ready, it advances towards the destination according to 
 GoFetch has two different versions:
 
 Chain reaction:
-The second version, Invoke-GoFetch (written in PowerShell to avoid Python installation prereq), implements a recursion that reads the full path, dumps the relevant credentials (Invoke-Mimikatz), and then copy and execute itself on the next relevant machine guided by the network path (Invoke-PsExec).
+Invoke-GoFetch (written in PowerShell to avoid Python installation prereq), implements a recursion that reads the full path, dumps the relevant credentials with Invoke-Mimikatz, and then copy and execute itself using Invoke-PsExec on the next relevant machine guided by the network path.
 
 One computer to rule them all:
-Python based code (a video of this version demonstrated in BlackHat Europe), using a technique where one centralized computer is doing the job of connecting to each computer in the path, in the right order, to steal (using Mimikatz) credentials from the computer memory, and use them to connect to the next machine in the path. 
+Python based code ([a video of this version demonstrated at BlackHat Europe 2016](https://www.youtube.com/watch?v=dPsLVE0R1Tg)), using a technique where one centralized computer is doing the job of connecting to each computer in the path, in the right order, to steal credentials (using Mimikatz), and use them to connect to the next machine in the path. 
 
-A video of the Python version was published here:
-https://www.youtube.com/watch?v=dPsLVE0R1Tg
+## Getting started with Invoke-GoFetch
+
+### Parameters
+
+* -PathToGraph
+Path to BloodHound exported Graph which includes a path between two users.
+
+* -PathToPayload
+Path to local payload file .exe/.bat/.ps1 to run on next nodes in the path.
+
+### Examples
+* Usage to get the credentials along the path:
+```
+.\Invoke-GoFetch.ps1 -PathToGraph .\pathFromBloodHound.json
+```
+* Usage to get the credentails along the path and execute additional payload on each:
+```
+.\Invoke-GoFetch.ps1 -PathToGraph .\graphExample.json -PathToPayload .\payload.exe
+```
+
+### Prerequisites
+
+* Invoke-GoFetch is able to run from any version of Windows through Windows 7 that has PowerShell v2 or higher installed and .Net 3.5 or higher.
+* Invoke-Mimikatz - is included with a change in the Mimikatz DLL which allowing the execution of PowerShell file with additional arguments.
+* Invoke-Psexec - is included without changes. 
+
+## Contributers
+* [Itay Grady](https://twitter.com/ItaiGrady) - *Changes in Mimikatz DLL & C.R*
+* [Man Nguyen (usrid0)](https://twitter.com/ItaiGrady) - *Testing & Demo Video*
+* [Tal Maor](https://twitter.com/TaltheMaor) - *Code*
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## Acknowledgments
+Thanks for great tools that reminds us every day...
+* [BloodHound](https://github.com/BloodHoundAD/BloodHound) - developed by [@_wald0](https://www.twitter.com/_wald0), [@CptJesus](https://twitter.com/CptJesus), and [@harmj0y](https://twitter.com/harmj0y).
+* [Invoke-Mimikatz](https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Invoke-Mimikatz.ps1) - [@JosephBialek](https://twitter.com/JosephBialek)
+* [Mimikatz](https://github.com/gentilkiwi/mimikatz) - [@gentilkiwi](https://twitter.com/gentilkiwi)
+* [Invoke-PsExec](https://github.com/EmpireProject/Empire/blob/master/data/module_source/lateral_movement/Invoke-PsExec.ps1) - [@harmj0y](https://twitter.com/harmj0y)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
