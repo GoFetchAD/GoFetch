@@ -45,7 +45,7 @@ Path to local payload file .exe/.bat/.ps1 to run on next nodes in the path.
 * [Man Nguyen (usrid0)]() - *Testing & Demo Video*
 * [Tal Maor](https://twitter.com/TaltheMaor) - *Code*
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/GoFetchAD/GoFetch/graphs/contributors) who participated in this project.
 
 ## Acknowledgments
 Thanks for great tools that reminds us every day to secure our machines. 
