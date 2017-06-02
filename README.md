@@ -15,6 +15,8 @@ Python based code ([a video of this version demonstrated at BlackHat Europe 2016
 
 ## Getting started with Invoke-GoFetch
 
+Place GoFetch folder on the first machine of the attack path, in a session of the first user of the attack path.
+
 ### Parameters
 
 * -PathToGraph
