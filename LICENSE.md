@@ -1,5 +1,6 @@
-                                                START OF LICENSE
 ----------------------------------------------------------------------------------------------------------------------
+                                                START OF LICENSE
+
 Invoke-GoFetch
 Copyright (c) 2015, Tal Maor
 All rights reserved. 
