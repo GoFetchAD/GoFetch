@@ -47,7 +47,7 @@ Path to local payload file .exe/.bat/.ps1 to run on next nodes in the path.
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## Acknowledgments
-Thanks for great tools that reminds us every day...
+Thanks for great tools that reminds us every day to secure our machines. 
 * [BloodHound](https://github.com/BloodHoundAD/BloodHound) - developed by [@_wald0](https://www.twitter.com/_wald0), [@CptJesus](https://twitter.com/CptJesus), and [@harmj0y](https://twitter.com/harmj0y).
 * [Invoke-Mimikatz](https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Invoke-Mimikatz.ps1) - [@JosephBialek](https://twitter.com/JosephBialek)
 * [Mimikatz](https://github.com/gentilkiwi/mimikatz) - [@gentilkiwi](https://twitter.com/gentilkiwi)
