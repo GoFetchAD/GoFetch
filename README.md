@@ -43,7 +43,7 @@ Path to local payload file .exe/.bat/.ps1 to run on next nodes in the path.
 
 ## Contributers
 * [Itay Grady](https://twitter.com/ItaiGrady) - *Changes in Mimikatz DLL & C.R*
-* [Man Nguyen (usrid0)](https://twitter.com/ItaiGrady) - *Testing & Demo Video*
+* [Man Nguyen (usrid0)]() - *Testing & Demo Video*
 * [Tal Maor](https://twitter.com/TaltheMaor) - *Code*
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
