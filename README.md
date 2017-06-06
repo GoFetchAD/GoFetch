@@ -50,7 +50,7 @@ Path to local payload file .exe/.bat/.ps1 to run on next nodes in the path.
 ## Contributers
 * [Itay Grady](https://twitter.com/ItaiGrady) - *Changes in Mimikatz DLL & C.R*
 * [Man Nguyen (usrid0)]() - *Testing & Demo Video*
-* [Man Be'ery](https://twitter.com/TalBeerySec) - *Name & Original Idea*
+* [Tal Be'ery](https://twitter.com/TalBeerySec) - *Name & Original Idea*
 * [Tal Maor](https://twitter.com/TaltheMaor) - *Code*
 
 See also the list of [contributors](https://github.com/GoFetchAD/GoFetch/graphs/contributors) who participated in this project.
