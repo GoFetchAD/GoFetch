@@ -48,7 +48,7 @@ Path to local payload file .exe/.bat/.ps1 to run on next nodes in the path.
 ![Alt text](https://cloud.githubusercontent.com/assets/27280621/26783367/770afb40-4a00-11e7-8dc1-d45919d0b551.JPG "Invoke-GoFetch Logic")
 
 ## Contributers
-* [Itay Grady](https://twitter.com/ItaiGrady) - *Changes in Mimikatz DLL & C.R*
+* [Itai Grady](https://twitter.com/ItaiGrady) - *Changes in Mimikatz DLL & C.R*
 * [Man Nguyen (usrid0)]() - *Testing & Demo Video*
 * [Tal Be'ery](https://twitter.com/TalBeerySec) - *Name & Original Idea*
 * [Dan Mor](https://twitter.com/danmor84) - *Logo*
